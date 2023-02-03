@@ -1,8 +1,8 @@
-package Predicate;
+import java.util.function.Predicate;
 
-public class PredicateAnonim {
+public class Pred {
     public static void main(String[] args) {
-        PredicateInteface<Integer> predicateAnon = s -> s > 0;
+        Predicate<Integer> predicateAnon = s -> s > 0;
         System.out.println(predicateAnon.test(2));
         System.out.println(predicateAnon.test(-5));
         System.out.println(predicateAnon.test(4));

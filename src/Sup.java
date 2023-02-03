@@ -1,13 +1,11 @@
-package Supplier;
+import java.util.function.Supplier;
 
-import static java.lang.Math.random;
-
-public class Supplier {
+public class Sup {
     public static void main(String[] args) {
-        SupplierInterface<Integer> supplier1 = () -> (int) Math.random() * 100;
+        Supplier<Integer> supplier1 = () -> (int) (Math.random() * 100);
         System.out.println(supplier1.get());
 
-        SupplierInterface<Integer> supplier2 = new SupplierInterface<Integer>() {
+        Supplier<Integer> supplier2 = new Supplier<Integer>() {
             @Override
             public Integer get() {
                 return (int) (Math.random() * 100);

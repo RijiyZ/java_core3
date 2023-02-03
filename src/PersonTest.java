@@ -1,7 +1,4 @@
-package Function;
-
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 
@@ -28,27 +25,6 @@ public class PersonTest {
 
         System.out.println("____________________");
 
-        PersonSortingByAge personSortingByAge = new PersonSortingByAge();
-        people.sort(new personSortingByAge());
-        for (Person person : people) {
-            System.out.println(person);
-        }
-    }
-
-
-    static class personSortingByAge implements Comparator<Person> {
-
-
-        @Override
-        public int compare(Person o1, Person o2) {
-            if (o1.getAge() > o2.getAge()) {
-                return 1;
-            } else if (o1.getAge() < o2.getAge()) {
-                return -1;
-            }
-
-            return 0;
-        }
     }
 }
 
